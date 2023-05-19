@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication37 {
+﻿namespace T265126 {
     partial class Form1 {
         /// <summary>
         /// Required designer variable.
@@ -10,7 +10,7 @@
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing) {
-            if(disposing && (components != null)) {
+            if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -23,7 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer();
+            this.popupControlContainer1 = new CustomPopupControlContainer(this.components);
             this.barManager1 = new DevExpress.XtraBars.BarManager();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -146,7 +146,7 @@
 
         #endregion
 
-        private DevExpress.XtraBars.PopupControlContainer popupControlContainer1;
+        private CustomPopupControlContainer popupControlContainer1;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraBars.Bar bar1;
