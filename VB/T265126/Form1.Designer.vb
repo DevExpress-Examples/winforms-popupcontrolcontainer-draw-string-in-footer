@@ -1,5 +1,7 @@
-﻿Namespace WindowsFormsApplication37
-    Partial Public Class Form1
+Namespace T265126
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,20 +12,20 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
-            Me.popupControlContainer1 = New DevExpress.XtraBars.PopupControlContainer()
+            Me.popupControlContainer1 = New T265126.CustomPopupControlContainer(Me.components)
             Me.barManager1 = New DevExpress.XtraBars.BarManager()
             Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
             Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
@@ -32,14 +34,14 @@
             Me.bar1 = New DevExpress.XtraBars.Bar()
             Me.barButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
             Me.simpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-            DirectCast(Me.popupControlContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.popupControlContainer1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.popupControlContainer1.SuspendLayout()
-            DirectCast(Me.barManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.barManager1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' popupControlContainer1
             ' 
-            Me.popupControlContainer1.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(255)))), (CInt((CByte(128)))), (CInt((CByte(128)))))
+            Me.popupControlContainer1.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((128)))))), (CInt(((CByte((128)))))))
             Me.popupControlContainer1.Appearance.Options.UseBackColor = True
             Me.popupControlContainer1.AutoSize = True
             Me.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
@@ -55,13 +57,13 @@
             ' 
             ' barManager1
             ' 
-            Me.barManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() { Me.bar1})
+            Me.barManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.bar1})
             Me.barManager1.DockControls.Add(Me.barDockControlTop)
             Me.barManager1.DockControls.Add(Me.barDockControlBottom)
             Me.barManager1.DockControls.Add(Me.barDockControlLeft)
             Me.barManager1.DockControls.Add(Me.barDockControlRight)
             Me.barManager1.Form = Me
-            Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.barButtonItem1})
+            Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.barButtonItem1})
             Me.barManager1.MainMenu = Me.bar1
             Me.barManager1.MaxItemId = 2
             ' 
@@ -99,7 +101,7 @@
             Me.bar1.DockCol = 0
             Me.bar1.DockRow = 0
             Me.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-            Me.bar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.barButtonItem1)})
+            Me.bar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.barButtonItem1)})
             Me.bar1.OptionsBar.MultiLine = True
             Me.bar1.OptionsBar.UseWholeRow = True
             Me.bar1.Text = "Custom 2"
@@ -133,25 +135,30 @@
             Me.Controls.Add(Me.barDockControlTop)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.popupControlContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.popupControlContainer1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.popupControlContainer1.ResumeLayout(False)
-            DirectCast(Me.barManager1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.barManager1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
+#End Region
+        Private popupControlContainer1 As T265126.CustomPopupControlContainer
 
-        Private popupControlContainer1 As DevExpress.XtraBars.PopupControlContainer
         Private barManager1 As DevExpress.XtraBars.BarManager
+
         Private simpleButton1 As DevExpress.XtraEditors.SimpleButton
+
         Private bar1 As DevExpress.XtraBars.Bar
+
         Private barButtonItem1 As DevExpress.XtraBars.BarButtonItem
+
         Private barDockControlTop As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlBottom As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlLeft As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlRight As DevExpress.XtraBars.BarDockControl
     End Class
 End Namespace
-
