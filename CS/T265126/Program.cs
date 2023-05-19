@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication37 {
+namespace T265126 {
     static class Program {
         /// <summary>
         /// The main entry point for the application.
