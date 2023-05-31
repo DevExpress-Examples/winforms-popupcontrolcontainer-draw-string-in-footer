@@ -6,8 +6,8 @@
 <!-- default file list -->
 *Files to look at*:
 
-* **[Form1.cs](./CS/WindowsFormsApplication37/Form1.cs) (VB: [Form1.vb](./VB/WindowsFormsApplication37/Form1.vb))**
-* [Program.cs](./CS/WindowsFormsApplication37/Program.cs) (VB: [Program.vb](./VB/WindowsFormsApplication37/Program.vb))
+* **[Form1.cs](./CS/T265126/Form1.cs) (VB: [Form1.vb](./VB/T265126/Form1.vb))**
+* [Program.cs](./CS/T265126/Program.cs) (VB: [Program.vb](./VB/T265126/Program.vb))
 <!-- default file list end -->
 # PopupControlContainer - How to draw a custom string in popup control container's footer
 
