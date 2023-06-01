@@ -24,7 +24,7 @@ Namespace T265126
 
         Private closeButton As Control
 
-        Private _SubControl As PopupContainerBarControl
+        Private subControl As PopupContainerBarControl
 
         Private Sub CreateButton()
             myButton = New SimpleButton()
@@ -32,9 +32,9 @@ Namespace T265126
             closeButton = SubControl.Controls(0)
             AddHandler closeButton.LocationChanged, AddressOf CloseButton_LocationChanged
             myButton.Size = New Size(100, SubControl.Controls(0).Size.Height)
-            _SubControl = SubControl
-            _SubControl.Controls.Add(myButton)
-            AddHandler _SubControl.PaintEx, AddressOf SubControl_PaintEx
+            subControl = SubControl
+            subControl.Controls.Add(myButton)
+            AddHandler subControl.PaintEx, AddressOf SubControl_PaintEx
         End Sub
 
         Private Sub SubControl_PaintEx(ByVal sender As Object, ByVal e As DevExpress.Utils.XtraPaintEventArgs)
@@ -53,7 +53,7 @@ Namespace T265126
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
             RemoveHandler Popup, AddressOf CustomPopupControlContainer_Popup
             RemoveHandler closeButton.LocationChanged, AddressOf CloseButton_LocationChanged
-            RemoveHandler _SubControl.PaintEx, AddressOf SubControl_PaintEx
+            RemoveHandler subControl.PaintEx, AddressOf SubControl_PaintEx
             MyBase.Dispose(disposing)
         End Sub
     End Class
