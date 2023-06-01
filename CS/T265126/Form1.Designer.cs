@@ -41,7 +41,6 @@
             // 
             this.popupControlContainer1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.popupControlContainer1.Appearance.Options.UseBackColor = true;
-            this.popupControlContainer1.AutoSize = true;
             this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.popupControlContainer1.Controls.Add(this.simpleButton1);
             this.popupControlContainer1.Location = new System.Drawing.Point(51, 79);
