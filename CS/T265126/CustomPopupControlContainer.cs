@@ -16,16 +16,16 @@ namespace T265126 {
         }
         private SimpleButton myButton;
         private Control closeButton;
-        private PopupContainerBarControl subControl;
+        private PopupContainerBarControl _SubControl;
         private void CreateButton() {
             myButton = new SimpleButton();
             myButton.Text = "button";
             closeButton = SubControl.Controls[0];
             closeButton.LocationChanged += CloseButton_LocationChanged;
             myButton.Size = new Size(100, SubControl.Controls[0].Size.Height);
-            subControl = SubControl;
-            subControl.Controls.Add(myButton);
-            subControl.PaintEx += SubControl_PaintEx;
+             _SubControl = SubControl;
+             _SubControl.Controls.Add(myButton);
+             _SubControl.PaintEx += SubControl_PaintEx;
         }
         private void SubControl_PaintEx(object sender, DevExpress.Utils.XtraPaintEventArgs e) {
             PopupContainerBarControl barControl = (sender as PopupContainerBarControl);
@@ -41,7 +41,7 @@ namespace T265126 {
         protected override void Dispose(bool disposing) {
             Popup -= CustomPopupControlContainer_Popup;
             closeButton.LocationChanged -= CloseButton_LocationChanged;
-            subControl.PaintEx -= SubControl_PaintEx;
+             _SubControl.PaintEx -= SubControl_PaintEx;
             base.Dispose(disposing);     
         }
     }
