@@ -43,7 +43,6 @@ Namespace T265126
             ' 
             Me.popupControlContainer1.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((128)))))), (CInt(((CByte((128)))))))
             Me.popupControlContainer1.Appearance.Options.UseBackColor = True
-            Me.popupControlContainer1.AutoSize = True
             Me.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.popupControlContainer1.Controls.Add(Me.simpleButton1)
             Me.popupControlContainer1.Location = New System.Drawing.Point(51, 79)
