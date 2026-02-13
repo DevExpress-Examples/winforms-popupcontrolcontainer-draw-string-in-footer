@@ -16,7 +16,7 @@ This example creates a custom PopupControlContainer control and draws a string w
 
 * [Form1.cs](./CS/T265126/Form1.cs) (VB: [Form1.vb](./VB/T265126/Form1.vb))
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-popupcontrolcontainer-draw-string-in-footer&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-popupcontrolcontainer-draw-string-in-footer&~~~was_helpful=no)
 
