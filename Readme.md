@@ -9,7 +9,7 @@
 
 This example creates a custom PopupControlContainer control and draws a string within its footer:
 
-![WinForms PopupControlContainer - Draw a string within the popup control container's footer](https://raw.githubusercontent.com/DevExpress-Examples/popupcontrolcontainer-how-to-draw-a-custom-string-in-popup-control-containers-footer-t265126/14.1.3+/media/9ad3b56b-2624-11e5-80bf-00155d62480c.png)
+![WinForms PopupControlContainer - Draw a string within the popup control container's footer](media/9ad3b56b-2624-11e5-80bf-00155d62480c.png)
 
 
 ## Files to Review
@@ -22,3 +22,4 @@ This example creates a custom PopupControlContainer control and draws a string w
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
